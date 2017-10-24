@@ -46,14 +46,21 @@ i {
   text-align: center;
 }
 
+#printer {
+  width: 64px;
+  float: right;
+}
+
 #presentation-wrapper{
   width: 960px;
   margin: auto;
+  display: inline-block;
 }
 
 #cite-wrapper {
   text-align: justify;
   padding-right: 15px;
+
 }
 
 #contact-wrapper {
@@ -61,6 +68,7 @@ i {
   border-color: grey;
   text-align: justify;
   padding-left: 15px;
+
 }
 
 #handwrite {
