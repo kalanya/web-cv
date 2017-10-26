@@ -10,6 +10,7 @@ h5, p, i {
 #header {
   background-color:#dedfea;
   border-bottom: #3f8747 10px solid;
+  padding-bottom: 10px;
 }
 
 #header-wrapper {
