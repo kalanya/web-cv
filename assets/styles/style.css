@@ -18,12 +18,14 @@ h5, p, i {
 }
 
 #presentation-wrapper {
+  min-width: 420px;
   text-align: left;
+  border-right: solid gray 2px;
 }
 
 #contact-wrapper {
+  min-width: 450px;
   text-align: left;
-  border-left: solid gray 2px;
 }
 
 #printer {
