@@ -19,13 +19,11 @@ h5, p, i {
 }
 
 #presentation-wrapper {
-  min-width: 420px;
   text-align: left;
-  border-right: solid gray 2px;
+
 }
 
 #contact-wrapper {
-  min-width: 450px;
   text-align: left;
 }
 
@@ -36,9 +34,8 @@ h5, p, i {
 
 #mypic{
   padding-top: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding-right: 15px;
+  padding-bottom: 15px;
   width: 180px;
   float: left;
 }
