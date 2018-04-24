@@ -100,7 +100,9 @@ h5, p, i {
 }
 
 .card-footer {
-  height: 28px;
+  display: flex;
+  flex-direction: column;
+  min-height: 28px;
   font-size: 15px;
   padding-left: 5px;
   padding-right: 5px;
