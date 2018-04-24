@@ -1,4 +1,8 @@
-h1, h2, b {
+h3 {
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+h2, b {
   font-family: 'Montserrat:500', sans-serif;
 }
 
@@ -27,12 +31,15 @@ h5, p, i {
   text-align: left;
 }
 
-#printer {
-  width: 64px;
-  float: right;
+#printer-image {
+  width: 56px;
+  margin-left: -6px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-#mypic{
+#mypic {
   padding-top: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
@@ -40,7 +47,12 @@ h5, p, i {
   float: left;
 }
 
-.logo-image{
+#info-wrapper {
+  width: 80%;
+  float: left;
+}
+
+.logo-image {
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
