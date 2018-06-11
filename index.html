@@ -6,9 +6,203 @@
   	<title>Página personal de Auró Miralles Contreras</title>
   	<link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  	<link rel="stylesheet" href="assets/styles/w3.css">
-  	<link rel="stylesheet" href="assets/styles/style.css">
-  	<script src="bundle.js"></script>
+  	<link href="assets/styles/w3.css" rel="stylesheet">
+  	<style type="text/css">
+  		h1 {
+		  font-family: 'Montserrat:500', sans-serif;
+		  font-size: 44px
+		}
+
+		h2 {
+		  font-size: 24px;
+		  font-family: 'Montserrat:500', sans-serif;
+		}
+
+		h4 {
+		  font-size: 16px;
+		  font-family: 'Montserrat', sans-serif;
+		}
+
+		h5 {
+		  font-size: 16px;
+		  font-family: 'Montserrat', sans-serif;
+		}
+
+		b {
+		  font-size: 15px;
+		  font-family: 'Montserrat:500', sans-serif;
+		}
+
+		p {
+		  font-size: 14px;
+		  font-family: 'Montserrat', sans-serif;
+		}
+
+		i {
+		  font-family: 'Montserrat', sans-serif;
+		}
+
+		#header {
+		  background-color:#dedfea;
+		  border-bottom: #3f8747 10px solid;
+		}
+
+		#header-wrapper{
+		  width: 960px;
+		  margin: auto;
+		}
+
+		#name {
+		  text-align: center;
+		}
+
+		#printer {
+		  width: 64px;
+		  float: right;
+		}
+
+		#presentation-wrapper{
+		  width: 960px;
+		  margin: auto;
+		  display: inline-block;
+		}
+
+		#cite-wrapper {
+		  text-align: justify;
+		  padding-right: 15px;
+
+		}
+
+		#contact-wrapper {
+		  border-left: 2px solid;
+		  border-color: grey;
+		  text-align: justify;
+		  padding-left: 15px;
+
+		}
+
+		#handwrite {
+		  font-size: 36px;
+		  font-family: 'Shadows Into Light', cursive;
+		}
+
+		#main-container{
+		  width: 960px;
+		  margin: auto;
+		  padding-right: 10px;
+		  padding-left: 10px;
+		}
+
+		#mypic{
+		  padding-top: 15px;
+		  padding-left: 20px;
+		  padding-right: 20px;
+		  padding-bottom: 20px;
+		  width: 180px;
+		  float: left;
+		}
+		#bars-wrapper {
+		  padding-right: 40px;
+		}
+
+		#footer {
+		  clear: left;
+		  height: 60px;
+		  background-color: lightgray;
+		}
+
+		.left-side {
+		  float: left;
+		  width: 470px;
+		  padding-right: 12px;
+		  clear: left;
+		}
+
+		.right-side {
+		  float: right;
+		  width: 470px;
+		  padding-left: 12px;
+		}
+		.logo-image{
+		  padding-top: 5px;
+		  padding-left: 5px;
+		  padding-right: 5px;
+		  padding-bottom: 5px;
+		  width: 60px;
+		  float: left;
+		}
+
+		.calendar {
+		  width: 20px;
+		  float: left;
+		  margin-left: 2px;
+		  margin-right: 2px;
+		  margin-top: 2px;
+		  margin-bottom: 2px;
+		}
+
+		.title {
+		  clear:left;
+		  height:100px;
+		  vertical-align: middle;
+		  line-height: 100px;
+		}
+		.separator-blank {
+		  height: 30px;
+		}
+
+		.calendar{
+		  width: 22px;
+		}
+
+		.bars-background {
+		  background-color: #f9f9f9;
+		  height: 34px;
+		}
+
+		.bars{
+		  height: 34px;
+		  width: 10%;
+		  padding-left: 5px;
+		  vertical-align: middle;
+		  line-height: 34px;
+		}
+
+		.odd-bars {
+		  background-color: #3f8747;
+		  color: white;
+		}
+
+		.even-bars {
+		  background-color: #dedfea;
+		}
+		 .card{
+		  margin-bottom: 20px;
+		  border: 1px solid;
+		  border-color: lightgray;
+		 }
+
+		.card-header {
+		  padding-left: 2px;
+		  padding-right: 5px;
+		  background-color: #dedfea;
+		}
+
+		.card-content {
+		  font-size: 15px;
+		  padding-left: 8px;
+		  padding-right: 8px;
+		  text-align: justify;
+		}
+
+		.card-footer {
+		  height: 28px;
+		  font-size: 15px;
+		  padding-left: 5px;
+		  padding-right: 5px;
+		  background-color: #dedfea;
+		}
+  	</style>
 </head>
 <body>
 	<div id="header">
@@ -321,11 +515,26 @@
 
 	</div>
 
-	<!--
-
 	<script type="text/javascript">
-
+		function animateBars() {
+			var subjects = {'Git': 65, 'Linux': 80, 'Sistemas': 70, 'Bash': 70, 'Java': 80, 'Python': 85,
+							'JavaScript': 70, 'HTML/CSS': 75, 'Redes': 70,
+							'SQL': 80, 'MDX': 75, 'XPath/XQuery': 75, 'Integración de datos': 70,
+							'R': 75, 'Matlab': 70, 'Minería de datos': 65};
+	    	$('.bars').each(function(i, elem){
+	    		var width = 1;
+	    		var id = setInterval(frame, 5);
+	    		function frame() {
+	        	 	if (width >= subjects[elem.firstChild.textContent]) {
+	            		clearInterval(id);
+	        		} else {
+	            		width++;
+	            		elem.style.width = width + '%';
+	        		}
+	    		}
+	    	});
+		}
+		animateBars();
 	</script>
-	-->
 </body>
 </html>
